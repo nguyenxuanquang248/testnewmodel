@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inpainting Result</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-wrapper {
+            margin: 20px;
+        }
+
+        .image-wrapper img {
+            max-width: 400px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inpainting Result</h1>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <h2>Original Image</h2>
+            <img src="/static/original.jpg" alt="Original">
+        </div>
+         <div class="image-wrapper">
+            <h2>Masked Image Result</h2>
+            <img src="/static/masked.jpg" alt="Masked">
+        </div>
+        <div class="image-wrapper">
+            <h2>Inpainting Result</h2>
+            <img src="/static/output.jpg" alt="Result">
+        </div>
+
+</body>
+</html>
